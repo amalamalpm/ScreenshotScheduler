@@ -39,6 +39,12 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+#Create folder if not exists
+if [ ! -d "$LOCATION" ]
+then
+    mkdir -p "$LOCATION"
+fi;
+
 #Starting to take screenshot
 while :
 do
